@@ -61,7 +61,7 @@ public class TicketInventory {
         }
     }
 
-    // Mô phỏng multi-thread
+    // Mô phỏng multi-thread (đặt vé và xử lý thanh toán)
     public static void main(String[] args) {
         TicketInventory inventory = new TicketInventory();
         TicketType[] types = TicketType.values();
@@ -92,7 +92,7 @@ public class TicketInventory {
         }
 
         // Hiển thị log
-        System.out.println("\nBooking Logs:");
+        System.out.println("\nLịch sử đặt vé:");
         inventory.getLogs().forEach(System.out::println);
     }
 }

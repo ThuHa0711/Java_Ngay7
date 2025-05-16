@@ -61,7 +61,7 @@ public class TicketInventory {
         }
     }
 
-    // Mô phỏng multi-thread (đặt vé và xử lý thanh toán)
+    // Mô phỏng multi-thread
     public static void main(String[] args) {
         TicketInventory inventory = new TicketInventory();
         TicketType[] types = TicketType.values();
